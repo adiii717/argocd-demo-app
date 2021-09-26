@@ -45,7 +45,7 @@ ingress:
   annotations: 
     kubernetes.io/ingress.class: "nginx"
   hosts:
-    - host: customer4.zjfits.com
+    - host: k8-nginx.zjfits.com
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -59,11 +59,9 @@ env:
   # - name: MYKEY
   #   value: "NOTASECRET"
   - name: HOSTED_ON
-    value: "Customer4 app"
+    value: "customer 2"
   - name: NODE_MAJOR_VERSION
     value: "16.x"
-  - name: DEM_INFO
-    value: "welcome customer4.com, we are glad"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
