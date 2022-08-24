@@ -1,7 +1,9 @@
 # argocd-demo-app
 deploy helm chart with argoCD
 
+![Demo App](images/argocd-app.png)
 
+![ArgoCD CLI App](images/argocd-cli-app-creation.png)
 
 # Create app
 
@@ -101,3 +103,4 @@ alias: &foo
   bar: baz
 alias_reuse: *foo 
 ```
+
