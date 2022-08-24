@@ -36,6 +36,34 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+configmap:
+  json:
+    - rigid
+    - better for data interchange
+  yaml: 
+    - slim and flexible
+    - better for configuration
+  object:
+    key: value
+    array:
+      - null_value:
+      - boolean: true
+      - integer: 1
+      - alias: &example aliases are like variables
+      - alias: *example
+  paragraph: >
+    Blank lines denote
+
+    paragraph breaks
+  content: |-
+    Or we
+    can auto
+    convert line breaks
+    to save space
+  alias: &foo
+    bar: baz
+  alias_reuse: *foo 
+
 service:
   type: ClusterIP
   port: 80
