@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: adiii717/demo-nodejs
+  repository: devopsyogi/kube
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "V2"
 
 imagePullSecrets: []
 nameOverride: ""
